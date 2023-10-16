@@ -1,35 +1,33 @@
-body, h1 {
+body,h1 {
     margin: 0;
     padding: 0;
 }
-
+ 
 body {
-    background: rgb(52, 85, 207);
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: rgb(56, 56, 231);
+    font-family: 'Courier New', Courier, monospace;
 }
-
+ 
 h1 {
-    text-align: center;
-    font-size: 2em;
-    color: silver;
     padding: 10px;
+    background-color: red;
 }
-
-#studentsList {
+ 
+#studentList {
     margin: 0;
     padding: 0;
     width: 250px;
     float: left;
-    border: 2px solid white;
+    border: 2px solid lightblue;
 }
-
-#studentsList h2 {
+ 
+#studentList h2 {
     padding: 10px;
     margin: 0;
     color: whitesmoke;
 }
-
-#studentsList li {
+ 
+#studentList li {
     padding: 5px 10px;
     border-top: 2px solid salmon;
     cursor: pointer;
@@ -37,6 +35,15 @@ h1 {
     font-style: italic;
 }
 
-#studentsList li:hover {
-    background: darkcyan;
+#studentList li:hover {
+    background: white;
+}
+
+#studentInfo {
+    float: left;
+    width: 250px;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid lightblue;
+    color: white;
 }
