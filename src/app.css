@@ -77,3 +77,31 @@ button:hover {
     max-width: 500px;
     width: 100%;
 }
+
+#modal .modal-header {
+    padding: 10px;
+    text-align: center;
+    margin: 0;
+}
+
+#modal .modal-content .row {
+    display: flex;
+}
+
+#modal .modal-content .row .input-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 5px 15px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"] {
+    font-size: 20px;
+    height: 28px;
+    padding-left: 10px; 
+    padding-right: 12px;
+    color: #666;
+    border: 1px solid #d6d6d6;
+}
