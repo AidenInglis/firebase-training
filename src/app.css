@@ -1,67 +1,54 @@
 body {
     margin: 0;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
-#app-layout {
+    font-family:Arial, Helvetica, sans-serif ;
+    }
+    #app-layout {
     display: flex;
-}
-
-#app-layout #left-col {
+    }
+    #app-layout #left-col {
     flex: 1;
-}
-
-#app-layout #right-col {
+    }
+    #app-layout #right-col {
     flex: 3;
-}
-
-/*Header*/
-header {
+    }
+    /* Header*/
+    header {
     background-color: #2e3e49;
-    color: #fff;
-    padding: 65px;
+    color: white;
+    height: 65px;
     display: flex;
-}
-
-header .left {
+    }
+    header .left {
     flex: 1;
-}
-
-header .title {
+    }
+    header .title {
     flex: 3;
     font-size: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-header .right {
+    }
+    header .right {
     flex: 1;
     display: flex;
     align-items: center;
     justify-content: right;
-}
-
-/*Global Style*/
-button {
+    }
+    /*Global Style */
+    button {
     margin: 5px;
     padding: 5px 8px;
     background: #32bacf;
-    border: none;
-    color: white;
-    border-radius: 3px;
+    border: none; color: white;
     font-size: 10px;
-}
-
-button:hover {
-    background-color: springgreen;
+    }
+    button:hover {
+    background-color: sandybrown;
     cursor: pointer;
-}
-
-/*Modal Window*/
-
-#modal-overlay {
-    background-color: darkgray;
+    }
+    /* Modal Window */
+    #modal-overlay {
+    background-color: gray;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -70,96 +57,81 @@ button:hover {
     display: none;
     align-items: center;
     justify-content: center;
-}
-
-#modal-overlay #modal {
-    background-color: #fff;
+    }
+    #modal-overlay #modal {
     max-width: 500px;
     width: 100%;
-}
-
-#modal .modal-header {
-    padding: 10px;
+    background-color: white;
+    }
+    /*Add Details Form */
+    #modal .modal-header h2 {
     text-align: center;
     margin: 0;
-}
-
-#modal .modal-content .row {
+    padding: 10px;
+    }
+    #modal .modal-content .row {
     display: flex;
-}
-
-#modal .modal-content .row .input-group {
+    }
+    #modal .modal-content .row .input-group {
     flex: 1;
     display: flex;
     flex-direction: column;
     margin: 5px 15px;
-}
-
-input[type="text"],
-input[type="number"],
-input[type="email"] {
+    }
+    input[type="text"],
+    input[type="number"],
+    input[type="email"] {
     font-size: 20px;
     height: 28px;
-    padding-left: 10px; 
+    padding-left: 10px;
     padding-right: 12px;
     color: #666;
     border: 1px solid #d6d6d6;
-}
-
-#modal .modal-footer {
+    }
+    #modal .modal-footer {
     display: flex;
     justify-content: flex-end;
     margin: 5px 10px;
-}
-
-/*Contact List*/
-
-#contact-list {
+    }
+    /* Contact List */
+    #contact-list {
     padding: 0;
     margin: 0;
     border: 1px solid grey;
     border-bottom: 0;
-}
-
-.contact-list-item {
+    }
+    .contact-list-item {
     display: flex;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid #999;
     padding: 5px;
-}
-
-.contact-list-item .media {
+    }
+    .contact-list-item .media {
     flex: 1;
-}
-
-.contact-list-item .content {
+    }
+    .contact-list-item .content {
     flex: 3;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-left: 10px;
-}
-
-.contact-list-item .content .title {
+    }
+    .contact-list-item .content .title {
     font-size: 12px;
     font-weight: bold;
-    color: darkgrey;
-}
-
-/*Right Column*/
-#right-col-detail {
+    color: #333;
+    }
+    /*Right Column */
+    #right-col-detail {
     margin: 20px;
-}
-
-#right-col-detail .label {
+    }
+    #right-col-detail .label {
     font-size: 11px;
-    font-weight: bold;
     margin-top: 10px;
-}
-
-#right-col-detail .data {
+    font-weight: bold;
+    }
+    #right-col-detail .data {
     font-size: 11px;
-}
-
-#app-layou #right-col #back-btn {
+    }
+    #app-layout #right-col #back-btn {
     display: none;
-}
+    }
