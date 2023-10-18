@@ -1,47 +1,31 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
- 
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="appe.css">
-
     <title>Document</title>
-
 </head>
 
- 
-
 <body>
-
     <main id="app.layout">
-
         <section id="left-col">
-
             <header>
-
- 
-
                 <div class="left"></div>
-                    <div class="title">
-                        Details
-                        <div class="right">
-                            <button class="add.btn">Add</button>
-                        </div>
+                <div class="title">
+                    Details
+                    <div class="right">
+                        <button class="add.btn">Add</button>
                     </div>
+                </div>
                 </div>
             </header>
             <ul id="details-list">
- 
+
             </ul>
         </section>
- 
+
         <section id="right-col">
             <header>
                 <div>
@@ -51,11 +35,48 @@
                     Name
             </header>
             <div id="right-col-details">
- 
+
             </div>
         </section>
     </main>
+    <!-- MODAL -->
+    <div id="modal-overlay">
+        <div id="modal">
+            <div class="modal-header">
+                <h2>Add Details</h2>
+            </div>
+            <ul id="error-label"></ul>
+            <div class="modal-content">
+                <div class="row">
+                    <div class="input-group">
+                        <label>First Name</label>
+                        <input type="text" id="firstname">
+                    </div>
+                    <div class="input-group">
+                        <label>Last Name</label>
+                        <input type="text" id="Lastname">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-group">
+                        <label>Age</label>
+                        <input type="text" id="age">
+                    </div>
+                    <div class="input-group">
+                        <label>Phone</label>
+                        <input type="text" id="Phone">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-group">
+                        <label>Email</label>
+                        <input type="text" id="email">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="appe.js"></script>
 </body>
- 
+
 </html>
