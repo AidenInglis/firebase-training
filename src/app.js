@@ -222,8 +222,8 @@ email = document.getElementById('email');
 const saveButtonPressed = async () => {
     checkRequired([firstname, lastname, age, phone, email])
     checkEmail(email)
-    checkInputLength(age, 2)
-    checkInputLength(phone, 15)
+    checkInputLength(age, 2, 1)
+    checkInputLength(phone, 15, 9)
     showMessageError(error)
 
     if(Object.keys(error).length === 0) {
@@ -291,12 +291,25 @@ const checkEmail = (input) => {
     }
 }
 
-const checkInputLength = (input, num) => {
+const checkInputLength = (input, Maxnum, MinNum) => {
     if(input.value.trim() !== "") {
-        if(IDBOpenDBRequest.value.trim().legnth === num) {
+        if(input.value.trim().legnth >= Minnum && input.value.trim().length <= MaxNum) {
             deleteErrorMessage(input)
         } else {
-            setErrorMessage(input, input.id + `must be ${num} digits`)
+            setErrorMessage(input, input.id + `must be between ${Minnum} and ${MinNum} digits`)
         }
+    }
+}
+
+const deleteErrorMessage = (input) => {
+    delete error[input.id]
+    input.style.border = "1px solid green"
+}
+
+const setErrorMessage = (input, message) => {
+    if(input.nodeName === "INPUT") {
+        input.style.border = "1px solid red"
+    } else {
+        error[input] = message
     }
 }
