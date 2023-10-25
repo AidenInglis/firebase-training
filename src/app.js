@@ -269,3 +269,34 @@ const saveButtonPressed = async () => {
         }
     }
 }
+
+const checkRequired = (inputArray) => {
+    inputArray.forEach((input) => {
+        if(input.value.trim() === "") {
+            setErroMessage(input, input.id + " is empty")
+        } else {
+            deleteErrorMessage(input)
+        }
+    })
+}
+
+const checkEmail = (input) => {
+    if(input.value.trim() !== "") {
+        const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        if(re.test(input.value.trim())) {
+            deleteErrorMessage(input)
+        } else {
+            showErrorMessage(input, input.id, "is invalid")
+        }
+    }
+}
+
+const checkInputLength = (input, num) => {
+    if(input.value.trim() !== "") {
+        if(IDBOpenDBRequest.value.trim().legnth === num) {
+            deleteErrorMessage(input)
+        } else {
+            setErrorMessage(input, input.id + `must be ${num} digits`)
+        }
+    }
+}
